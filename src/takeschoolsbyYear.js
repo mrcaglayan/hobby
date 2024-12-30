@@ -4,7 +4,7 @@ const year = parseInt(urlParams.get('year'), 10);
 const schoolName = urlParams.get('school');
 
 let rawSchools = [];
-let schoolBasedOnYearAndSchoolName = {};
+export let schoolBasedOnYearAndSchoolName = {};
 
 // Fetch data from the server
 fetch(`/api/schools`)
@@ -31,4 +31,6 @@ fetch(`/api/schools`)
 
  { schoolBasedOnYearAndSchoolName };
 
-module.s = { schoolBasedOnYearAndSchoolName };
+// module.s = { schoolBasedOnYearAndSchoolName };
+
+// export schoolBasedOnYearAndSchoolName;
