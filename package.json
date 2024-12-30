@@ -2,7 +2,7 @@
   "name": "my-web-app",
   "version": "1.0.0",
   "description": "A web application with user and admin login functionality.",
-  "main": "src/app.js",
+  "main": "src/server.js",
     "type": "module",
 
   "scripts": {
