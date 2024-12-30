@@ -364,8 +364,8 @@ app.put('/api/updateindexesforinformationpass', (req, res) => {
 
 app.use('/src', express.static('src'));
 app.use('/styles', express.static('styles'));
-app.use(express.static('public'));
 app.use('/data.json', express.static('data.json'));
+app.use(express.static('public'));
 
 
 
