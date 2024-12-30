@@ -9,7 +9,6 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(cors());
 // Serve static files from the 'public' directory
-app.use(express.static('public'));
 
 const dataFilePath = path.join(__dirname, 'data.json');
 let data = {
@@ -52,7 +51,7 @@ app.get('/api/completeentrydb', (req, res) => {
         filteredStudents = filteredStudents.filter(student => student.name === schoolName);
     }
 
-    console.log('Filtered students:', filteredStudents); // Debugging log
+    // console.log('Filtered students:', filteredStudents); // Debugging log
     res.json(filteredStudents);
 });
 
@@ -64,7 +63,7 @@ app.get('/api/completeentrydb-ID', (req, res) => {
         filteredStudents = filteredStudents.filter(student => student["Student Tezkere No"] === studenttezkereNo);
     }
 
-    console.log('Filtered students2:', filteredStudents); // Debugging log
+    // console.log('Filtered students2:', filteredStudents); // Debugging log
     res.json(filteredStudents);
 });
 
@@ -368,43 +367,6 @@ app.use('/data.json', express.static('data.json'));
 app.use('/public',express.static('public'));
 
 
-
-// asdf
-// Serve the favicon.ico file
-// app.get('/favicon.ico', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'favicon.ico'));
-// });
-
-// app.get('/src/*', (req, res) => {
-//     const filePath = path.join(__dirname, 'src', req.params[0]);
-//     if (fs.existsSync(filePath)) {
-//         res.sendFile(filePath);
-//     } else {
-//         res.status(404).send('File not found');
-//     }
-// });
-
-// app.get('/styles/*', (req, res) => {
-//     const filePath = path.join(__dirname, 'styles', req.params[0]);
-//     if (fs.existsSync(filePath)) {
-//         res.sendFile(filePath);
-//     } else {
-//         console.log('Requested file path:', filePath);
-//         res.status(404).send('File not found');
-//     }
-// });
-// app.get('/data.json', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'data.json'));
-
-// });
-// app.get('/*', (req, res) => {
-//     const filePath = path.join(__dirname, 'public', req.params[0])+'.html';
-//     if (fs.existsSync(filePath)) {
-//         res.sendFile(filePath);
-//     } else {
-//         res.status(404).send('File not found');
-//     }
-// });
 
 
 
