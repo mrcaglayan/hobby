@@ -16,7 +16,7 @@ document.getElementById('back-button').addEventListener('click', function() {
 });
 
 function saveUser(user) {
-    fetch('/api/api/users', {
+    fetch('/api/users', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -35,7 +35,7 @@ function saveUser(user) {
 }
 
 function fetchUsers() {
-    fetch('/api/api/users')
+    fetch('/api/users')
     .then(response => response.json())
     .then(data => {
         users = data;
@@ -58,7 +58,7 @@ function displayUsers() {
 }
 
 function fetchSchools() {
-    fetch('/api/api/schools')
+    fetch('/api/schools')
     .then(response => response.json())
     .then(data => {
         const schoolDropdown = document.getElementById('school-dropdown');
