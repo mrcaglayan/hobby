@@ -325,7 +325,6 @@
       "selectedYear": "2024",
       "id": 1735415294224,
       "RegistrationType": "New Registration"
-<<<<<<< HEAD
     },
     {
       "Registeration Date": "2024-02-01",
@@ -479,8 +478,6 @@
       "selectedYear": "2024",
       "id": 1735533159129,
       "RegistrationType": "Renewed Registration"
-=======
->>>>>>> d9cd681cd0547d72b8c76dfc7adfd3974905013b
     }
   ],
   "completeentrydb": [
@@ -510,7 +507,6 @@
       "username": "soma",
       "id": 1735415294224,
       "RegistrationType": "New Registration"
-<<<<<<< HEAD
     },
     {
       "Registeration Date": "2024-02-01",
@@ -754,8 +750,6 @@
       "username": "soma",
       "id": 1735533159129,
       "RegistrationType": "Renewed Registration"
-=======
->>>>>>> d9cd681cd0547d72b8c76dfc7adfd3974905013b
     }
   ],
   "allDiscountOptions": [
