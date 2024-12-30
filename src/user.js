@@ -488,6 +488,7 @@ applyButton.textContent = 'Apply';
 applyButton.id = 'apply-button';
 document.getElementById('search-modal').querySelector('.modal-content').appendChild(applyButton);
 
+
 applyButton.addEventListener('click', () => {
     fetch('/data.json') // Ensure the path is correct
         .then(response => {
